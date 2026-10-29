@@ -1,0 +1,17 @@
+# Install nginx
+sudo apt update
+sudo apt install nginx -y
+sudo systemctl enable nginx
+sudo systemctl start nginx
+
+# Check service
+sudo systemctl status nginx
+
+#EBS
+#After creation of volume in AWS, run below commands
+lsblk
+df -h
+sudo mkfs.ext4 /dev/nvme1n1
+sudo mkdir /data
+sudo mount /dev/nvme1n1 /data
+df -h
