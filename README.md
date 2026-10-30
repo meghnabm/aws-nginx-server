@@ -17,7 +17,7 @@ This project demonstrates deployment of an Nginx web server on AWS EC2 while cov
 ---
 
 ## Architecture
-
+```
 Internet
 ↓
 Security Group
@@ -27,7 +27,7 @@ EC2 Instance
 Nginx Web Server
 ↓
 EBS Volume
-
+```
 ---
 
 ## Implementation Steps
@@ -87,19 +87,18 @@ Created custom AMI for future server deployment.
 
 ### IAM User
 
-screenshots/iam-user.png
-
-### IAM Group
-
-screenshots/iam-group.png
+screenshots/IAM-user-creation.png
+screenshots/IAM-set-perm.png
+screenshots/IAM-user-created.png
 
 ### EC2 Instance
 
-screenshots/ec2-instance.png
+screenshots/instance-created.png
 
 ### Nginx Running
 
-screenshots/nginx-running.png
+screenshots/nginx_running.png
+screenshots/custom-page.png
 
 ### EBS Mounted
 
